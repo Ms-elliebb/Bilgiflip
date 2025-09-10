@@ -1,0 +1,33 @@
+[
+  {
+    "id": "flutter_basics",
+    "name": "Flutter Temelleri",
+    "icon_code": 60134,
+    "topics": [
+      {
+        "id": "widgets",
+        "name": "Temel Widget'lar",
+        "flashcards": [
+          {
+            "question": "StatelessWidget ve StatefulWidget arasındaki temel fark nedir?",
+            "answer": "StatelessWidget'lar durumsuzdur, yani bir kere çizildikten sonra değişmezler. StatefulWidget'lar ise `setState()` çağrıldığında yeniden çizilebilen, iç durumu (state) olan widget'lardır."
+          },
+          {
+            "question": "Flutter'da bir yazıyı ekranda ortalamak için hangi widget'lar kullanılır?",
+            "answer": "`Center` widget'ı, içindeki çocuğu (child) hem yatayda hem de dikeyde ortalar. Sadece metin değil, her türlü widget için kullanılabilir."
+          }
+        ]
+      },
+      {
+        "id": "dart_code",
+        "name": "Dart Kod Örnekleri",
+        "flashcards": [
+          {
+            "question": "Dart dilinde bir listenin elemanlarını ekrana yazdıran bir `for` döngüsü nasıl yazılır?",
+            "answer": "```dart\nvoid main() {\n  var myList = ['elma', 'armut', 'çilek'];\n\n  for (var fruit in myList) {\n    print(fruit);\n  }\n}\n```"
+          }
+        ]
+      }
+    ]
+  }
+]

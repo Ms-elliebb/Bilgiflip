@@ -1,16 +1,95 @@
-# bilgi_flip
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+BilgiFlip: Kişiselleştirilebilir ve Modern Bir Çalışma Kartı Platformu 🚀
+BilgiFlip, istediğiniz her konuda kendi çalışma setlerinizi oluşturmanıza olanak tanıyan, modern ve konu bağımsız bir Flutter çalışma kartı (flashcard) uygulamasıdır. İster tarih, ister yazılım, ister yabancı dil çalışın; BilgiFlip'in esnek yapısı sayesinde tüm içeriği kolayca yönetebilirsiniz.
+Bu proje, Flutter ile ne kadar şık, performanslı ve kolayca genişletilebilir uygulamalar yapılabileceğinin canlı bir kanıtıdır.
+✨ Ekran Görüntüleri
+Not: Aşağıdaki ekran görüntülerinde yer alan "Flutter" içeriği sadece bir örnektir. Uygulamanın gücü, bu içeriği kendi istediğiniz herhangi bir konuyla değiştirebilmenizdir.
+Kategori Listesi	Konu Listesi	Çalışma Kartı	Sonuç Ekranı
+![alt text](ekran-goruntusu-kategoriler.png)
+![alt text](ekran-goruntusu-konular.png)
+![alt text](ekran-goruntusu-kart.png)
+![alt text](ekran-goruntusu-sonuc.png)
+🌟 Platformun Yetenekleri
+✅ %100 Kişiselleştirilebilir İçerik: Tüm kategoriler, konular ve kartlar basit bir JSON dosyası üzerinden yönetilir. Kod yazmadan kendi derslerinizi ekleyin!
+🧠 Aktif Öğrenme: Kartları "Biliyorum" veya "Tekrar Et" olarak işaretleyerek öğrenme sürecinizi aktif olarak yönetin.
+📈 İlerleme Takibi ve Raporlama: Uygulama, hangi kartları bildiğinizi hatırlar (shared_preferences ile) ve her konudaki başarı yüzdenizi gösterir. Konu sonunda sunulan dairesel grafik ile performansınızı anında görün.
+💻 Kod ve Formül Desteği: Cevaplarınızda, flutter_syntax_highlighter ile güzelce renklendirilmiş kod blokları, formüller veya özel formatlı metinler kullanabilirsiniz.
+🎨 Modern ve Akıcı Arayüz:
+Kaydırıldıkça küçülen dinamik başlıklar (SliverAppBar).
+Uygulama genelinde kullanılan şık "Kozmik Gece" teması ve gradyanlar.
+Akıcı kart çevirme ve liste giriş animasyonları.
+🏗️ Temiz ve Ölçeklenebilir Mimari: Riverpod ile inşa edilmiş, anlaşılması ve geliştirilmesi kolay bir kod tabanı.
+💡 Kendi İçeriğinizi Nasıl Eklersiniz?
+Bu uygulamanın en güzel yanı, kendi çalışma setlerinizi eklemenin inanılmaz kolay olmasıdır.
+Projedeki assets/data.json dosyasını açın.
+Aşağıdaki yapıyı kullanarak kendi kategorilerinizi, konularınızı ve kartlarınızı ekleyin:
+```json
+[
+  {
+    "id": "tarih_osmanli",
+    "name": "Osmanlı Tarihi",
+    "icon_code": 59711, // Material Icon Kodu (history)
+    "topics": [
+      {
+        "id": "kurulus_donemi",
+        "name": "Kuruluş Dönemi",
+        "flashcards": [
+          {
+            "question": "Osmanlı Devleti'nin ilk başkenti neresidir?",
+            "answer": "Söğüt ve çevresidir. Daha sonra Bursa, Edirne ve son olarak İstanbul başkent olmuştur."
+          },
+          {
+            "question": "Ankara Savaşı hangi padişah döneminde ve kiminle yapılmıştır?",
+            "answer": "1402 yılında, Yıldırım Bayezid döneminde Timur ile yapılmıştır. Bu savaş sonrası Fetret Devri başlamıştır."
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "yabanci_dil_ingilizce",
+    "name": "İngilizce Kelimeler",
+    "icon_code": 60980, // Material Icon Kodu (translate)
+    "topics": [
+      {
+        "id": "sifatlar_a1",
+        "name": "A1 Seviyesi Sıfatlar",
+        "flashcards": [
+          {
+            "question": "Beautiful",
+            "answer": "Güzel"
+          },
+          {
+            "question": "Important",
+            "answer": "Önemli"
+          }
+        ]
+      }
+    ]
+  }
+]
+```
+Uygulamayı yeniden başlatın. Yeni içeriğiniz otomatik olarak yüklenecektir!
+🛠️ Kullanılan Teknolojiler ve Paketler
+Çatı (Framework): Flutter
+State Management: flutter_riverpod
+Veri Kalıcılığı (Persistence): shared_preferences
+UI & Animasyon: flip_card, pie_chart, flutter_animate, google_fonts
+Kod Formatlama: flutter_syntax_highlighter
+🚀 Projeyi Çalıştırma
+Depoyu Klonlayın:
+```sh
+git clone https://github.com/kullanici-adiniz/bilgi_flip.git
+cd bilgi_flip
+```
+Bağımlılıkları Yükleyin:
+```sh
+flutter pub get
+```
+Uygulamayı Başlatın:
+```sh
+flutter run
+```
+🎯 Gelecek Geliştirmeler
+Uygulama İçi Deste Oluşturucu: Kullanıcıların JSON düzenlemeden, doğrudan arayüz üzerinden kendi kartlarını oluşturması.
+Firebase Entegrasyonu: İçerik ve kullanıcı ilerlemesini bulutta saklayarak cihazlar arası senkronizasyon sağlamak.
+Aralıklı Tekrarlama Algoritması (Spaced Repetition): Öğrenmeyi optimize etmek için kartları belirli aralıklarla otomatik olarak tekrar sunmak.

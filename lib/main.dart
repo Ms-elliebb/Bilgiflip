@@ -1,5 +1,5 @@
-import 'package:bilgiflip/screens/home_page.dart';
-import 'package:bilgiflip/utils/app_theme.dart';
+import 'package:bilgi_flip/screens/home_page.dart';
+import 'package:bilgi_flip/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 

@@ -20,6 +20,8 @@ Bu proje, Flutter ile ne kadar şık, performanslı ve kolayca genişletilebilir
 
 Uygulamanın akıcı animasyonlarını ve genel kullanımını gösteren kısa bir video:
 
+<video src="https://github.com/user-attachments/assets/ec9d69de-da4a-439b-9d04-a3c7eb5ed072" width="500" controls></video>
+
 ---
 
 ## 🌟 Platformun Yetenekleri

@@ -12,7 +12,17 @@ Bu proje, Flutter ile ne kadar şık, performanslı ve kolayca genişletilebilir
 
 | Kategori Listesi | Konu Listesi | Çalışma Kartı | Sonuç Ekranı |
 | :---: | :---: | :---: | :---: |
-| ![alt text](ekran-goruntusu-kategoriler.png) | ![alt text](ekran-goruntusu-konular.png) | ![alt text](ekran-goruntusu-kart.png) | ![alt text](ekran-goruntusu-sonuc.png) |
+| <img src="assets/images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-11 at 11.46.28.png" width="200"> | <img src="assets/images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-11 at 11.46.31.png" width="200"> | <img src="assets/images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-11 at 11.46.34.png" width="200"> | <img src="assets/images/Simulator Screenshot - iPhone 16 Pro Max - 2025-09-11 at 11.46.41.png" width="200"> |
+
+---
+
+## 🎥 Ekran Kaydı
+
+Uygulamanın akıcı animasyonlarını ve genel kullanımını gösteren kısa bir video:
+
+https://github.com/Ms-elliebb/Bilgiflip/assets/91543242/f41e9c7a-514a-4a25-a7b3-82c5f11e9a4f
+
+
 
 ---
 

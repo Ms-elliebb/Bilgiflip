@@ -1,11 +1,14 @@
-import 'package:bilgi_flip/utils/app_theme.dart';
+import 'package:bilgiflip/screens/home_page.dart';
+import 'package:bilgiflip/utils/app_theme.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'screens/home_page.dart';
 
+import 'screens/splash_screen.dart';
 
 void main() {
-  runApp(const ProviderScope(child: MyApp()));
+  runApp(
+    const ProviderScope(child: MyApp()),
+  );
 }
 
 class MyApp extends StatelessWidget {
@@ -16,7 +19,8 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'BilgiFlip',
       theme: AppTheme.darkTheme,
-      home: const HomePage(),
+      debugShowCheckedModeBanner: false,
+      home: const SplashScreen(nextScreen: HomePage()),
     );
   }
 }

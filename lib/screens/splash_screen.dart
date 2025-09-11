@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'dart:async';
 import 'dart:math' as math;
 
-import 'package:bilgiflip/screens/home_page.dart';
-
 class SplashScreen extends StatefulWidget {
   final Widget nextScreen;
   

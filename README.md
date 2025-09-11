@@ -20,7 +20,7 @@ Bu proje, Flutter ile ne kadar şık, performanslı ve kolayca genişletilebilir
 
 Uygulamanın akıcı animasyonlarını ve genel kullanımını gösteren kısa bir video:
 
-https://github.com/Ms-elliebb/Bilgiflip/assets/91543242/f41e9c7a-514a-4a25-a7b3-82c5f11e9a4f
+<video src="https://github.com/Ms-elliebb/Bilgiflip/assets/91543242/f41e9c7a-514a-4a25-a7b3-82c5f11e9a4f" width="500" controls></video>
 
 
 
